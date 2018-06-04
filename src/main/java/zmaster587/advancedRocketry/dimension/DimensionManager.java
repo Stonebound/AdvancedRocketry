@@ -57,7 +57,7 @@ public class DimensionManager implements IGalaxy {
 
 	//Reference to the worldProvider for any dimension created through this system, normally WorldProviderPlanet, set in AdvancedRocketry.java in preinit
 	public static Class<? extends WorldProvider> planetWorldProvider;
-	private HashMap<Integer,DimensionProperties> dimensionList;
+	public HashMap<Integer,DimensionProperties> dimensionList;
 	private HashMap<Integer, StellarBody> starList;
 
 	public static final int GASGIANT_DIMID_OFFSET = 0x100; //Offset by 256

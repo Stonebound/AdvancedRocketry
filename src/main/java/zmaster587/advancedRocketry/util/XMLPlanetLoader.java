@@ -514,8 +514,9 @@ public class XMLPlanetLoader {
 			}
 
 			for(IDimensionProperties properties : star.getPlanets()) {
-				if(!properties.isMoon())
-					outputString = outputString + writePlanet((DimensionProperties)properties, 2);
+				DimensionProperties property = DimensionManager.getInstance().dimensionList.get(properties.getId());
+				if(!property.isMoon())
+					outputString = outputString + writePlanet(property, 2);
 			}
 
 			outputString = outputString + "\t</star>\n";
